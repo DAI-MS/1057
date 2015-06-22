@@ -1,0 +1,49 @@
+users_common:
+    dai:
+        ensure: present
+        uid: 7002
+        gid: dai
+        comment: DAI Managed Services
+        managehome: true
+    
+    nagios:
+        ensure: present
+        uid: 8002
+        gid: nagios
+        comment: Nagios Monitor
+        managehome: true
+
+users_wms:
+    daiwms:
+        ensure: present
+        uid: 7000
+        gid: dai
+        comment: DAI WMS Application User
+        home: /daiwms
+        managehome: true
+                
+users_wcs:
+    daiwcs:
+        ensure: present
+        uid: 7008
+        gid: dai
+        comment: DAI WCS Application User
+        home: /daiwcs
+        managehome: true
+
+users_db:
+    daidbs:
+        ensure: present
+        uid: 7001
+        gid: dai
+        comment: DAI DB Application User
+        managehome: true
+                
+users_soa:
+    daisoac:
+        ensure: present
+        uid: 7009
+        gid: dai
+        comment: DAI SOA Application User
+        home: /daisoac
+        managehome: true
