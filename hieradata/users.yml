@@ -69,3 +69,13 @@ users_irptc:
         password: $6$KaFMBhO5$H9678.ku3tGxLKMPtfzN2njsjuSFn3GfzKTm11O.K5UUsiZGOCfh4XqKrj1Gc36.Zoa6xcPo76cGgxEvFEpnD1
         home: /daiirptc
         managehome: true
+
+users_tcr:
+     daitcr:
+        ensure: present
+        uid: 7003
+        gid: dai
+        comment: DAI ILS Application User
+        password: $6$NnJ/FFDv$wMDnBtZJmEJ0qyX6bP6/88kE8Rd50UzCVnSAPGkuMPVwmP26RbYt7vrks8UsZ4t8uaJ5NYAS5lvUQwF3nqia9.
+        home: /daitcr
+        managehome: true
