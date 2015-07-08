@@ -26,14 +26,14 @@ filebucket { 'main':
 File { backup => 'main' }
 
 node default {
-        group { [ 'dai', 'nagios' ] :
+        group { [ 'dai', 'nagios', 'uptimeagent' ] :
                 ensure => present,
         }
 
         users { common: }
-        if $sysstatus == 'ILS' {
+        if $app == 'ILS-IRPTC' {
 
-                users { ils: }
+                users { daitcr: daiirptc: }
         }
 
 }
