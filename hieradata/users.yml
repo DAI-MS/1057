@@ -4,6 +4,7 @@ users_common:
         uid: 7002
         gid: dai
         comment: DAI Managed Services
+        password: $6$z05j1.fF$xy2UjsZ2d9TTkCy68qr24sp4n9ajxq041xwbxPH6TWle8dw2t0uiMYCoHZVWvNIyUkRMzeU8SxjJI8a0v980f0
         managehome: true
     
     nagios:
@@ -45,5 +46,26 @@ users_soa:
         uid: 7009
         gid: dai
         comment: DAI SOA Application User
+        password: $6$wRv9eTCM$.1ikr5JdnRvCeMxhXPPdaH5FBMTlogaS8BJ/UsmE/HQevdmUJ16FJlJv7I9uoG32edMy8xymWScx.LMkja33/0
         home: /daisoac
+        managehome: true
+
+users_irpdc:
+     daiirpdc:
+        ensure: present
+        uid: 7006
+        gid: dai
+        comment: DAI IRPDC Application User
+        password: $6$4U7h3HyB$2KDbMC23ZSs0S2O1jSD/XzAkeEUnNId9e3n7POsQxUXDQeapnOrbUOl4ppbl5JcWE06jsGKGLiU3Qj7Z9Z/Md1
+        home: /daiirpdc
+        managehome: true
+
+users_irptc:
+     daiirptc:
+        ensure: present
+        uid: 7005
+        gid: dai
+        comment: DAI IRP TC Application User
+        password: $6$KaFMBhO5$H9678.ku3tGxLKMPtfzN2njsjuSFn3GfzKTm11O.K5UUsiZGOCfh4XqKrj1Gc36.Zoa6xcPo76cGgxEvFEpnD1
+        home: /daiirptc
         managehome: true
