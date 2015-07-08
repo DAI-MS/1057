@@ -14,6 +14,14 @@ users_common:
         comment: Nagios Monitor
         managehome: true
 
+    uptimeagent:
+        ensure: present
+        uid: 8003
+        gid: uptimeagent
+        comment: Uptime Agent
+        home: /opt/uptime-agent
+        managehome: true
+
 users_wms:
     daiwms:
         ensure: present
